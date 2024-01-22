@@ -25,7 +25,7 @@
           colors: {
             org: '#E76F51',
             primary: '#FF4240',
-            org2: '#FF8938',
+            secondary: '#AFAFAF',
           }
         }
       }
@@ -80,46 +80,94 @@
 
     <!-- banner -->
     <!-- slider-container -->
-      <div class="relative">
-        <div class="carousel w-full ">
-          <!-- image-1 -->
-          <div id="slide1" class="carousel-item relative w-full">
-            <img src="Images/1.png" class="w-[full]" />
-            <div class="absolute bottom-10 left-10 justify-between ">
-              <a href="#slide3" class="btn btn-circle bg-black text-white  border-none mr-5">❮</a>
-              <a href="#slide2" class="btn btn-circle bg-black text-white  border-none">❯</a>
-            </div>
-          </div>
-          <!-- image-2 -->
-          <div id="slide2" class="carousel-item relative w-full">
-            <img src="Images/2.png" class="w-full" />
-            <div class="absolute bottom-10 left-10 justify-between ">
-              <a href="#slide1" class="btn btn-circle bg-black text-white  border-none mr-5">❮</a>
-              <a href="#slide3" class="btn btn-circle bg-black text-white  border-none">❯</a>
-            </div>
-          </div>
-          <!-- image-3 -->
-          <div id="slide3" class="carousel-item relative w-full">
-            <img src="Images/3.png" class="w-full" />
-            <div class="absolute bottom-10 left-10 justify-between ">
-              <a href="#slide2" class="btn btn-circle bg-black text-white  border-none mr-5">❮</a>
-              <a href="#slide1" class="btn btn-circle bg-black text-white  border-none">❯</a>
-            </div>
+    <div class="relative">
+      <div class="carousel w-full ">
+        <!-- image-1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-[full]" />
+          <div class="absolute bottom-10 left-10 justify-between ">
+            <a href="#slide3" class="btn btn-circle bg-black text-white  border-none mr-5">❮</a>
+            <a href="#slide2" class="btn btn-circle bg-black text-white  border-none">❯</a>
           </div>
         </div>
-        <!-- box -->
-        <div class="bg-black space-y-2 static rounded-xl p-5 md:absolute md:w-[50%] md:bottom-5 md:right-5 md:space-y-1 lg:w-[47%] lg:bottom-14 lg:right-14 lg:space-y-3 xl:space-y-5">
-          <h1 class="text-white font-bold text-xl md:text-[15px] lg:text-xl xl:text-2xl">Meet all the heroes from the field</h1>
-          <p class="text-white text-xs md:text-[12px] lg:text-[15px] xl:text-[17px]">Connect with the field's hockey legends in a dynamic and inspiring encounter, celebrating the prowess and passion of these heroes.</p>
+        <!-- image-2 -->
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/2.png" class="w-full" />
+          <div class="absolute bottom-10 left-10 justify-between ">
+            <a href="#slide1" class="btn btn-circle bg-black text-white  border-none mr-5">❮</a>
+            <a href="#slide3" class="btn btn-circle bg-black text-white  border-none">❯</a>
+          </div>
+        </div>
+        <!-- image-3 -->
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="Images/3.png" class="w-full" />
+          <div class="absolute bottom-10 left-10 justify-between ">
+            <a href="#slide2" class="btn btn-circle bg-black text-white  border-none mr-5">❮</a>
+            <a href="#slide1" class="btn btn-circle bg-black text-white  border-none">❯</a>
+          </div>
         </div>
       </div>
+      <!-- box -->
+      <div
+        class="bg-black space-y-1 static rounded-xl p-5 md:absolute md:w-[50%] md:bottom-5 md:right-5 md:space-y-1 lg:w-[47%] lg:bottom-14 lg:right-14 lg:space-y-3 xl:space-y-5">
+        <h1 class="text-white font-bold text-xl md:text-[15px] lg:text-xl xl:text-2xl">Meet all the heroes from the
+          field</h1>
+        <p class="text-secondary text-xs md:text-[12px] lg:text-[15px] xl:text-[17px]">Connect with the field's hockey
+          legends in a dynamic and inspiring encounter, celebrating the prowess and passion of these heroes.</p>
+      </div>
+    </div>
   </header>
   <!-- main -->
-  <main>
+  <main class="w-[90%] md:w-[80%] mx-auto">
+    <!-- Section Progress -->
+    <section>
+      <div class="text-center mt-6 md:mt-16 space-y-1 md:space-y-3">
+        <h1 class="font-bold text-3xl text-black">Professional Hockeys Club</h1>
+        <p class="font-bold text-sm text-secondary">Premier league, elite athletes, and unforgettable moments – join the
+          exclusive world of our Professional Hockey Club for greatness. </p>
+      </div>
+      <div class="grid mt-14 justify-items-center grid-cols-1  md:grid-cols-2 lg:grid-cols-4">
+        <!-- progress-1 -->
+        <div class="space-y-1  items-center text-center">
+          <div class="radial-progress text-primary scale-150" style="--value:87;" role="progressbar"><span
+              class="text-black font-bold">87%</span></div>
+          <h1 class="font-bold text-lg text-black pt-7">Prayer Facility</h1>
+          <p class="font-bold text-sm text-secondary">Spiritual serenity, 87% satisfaction.</p>
+        </div>
+        <!-- progress-2 -->
+        <div class="mt-14 md:mt-0 space-y-1  items-center text-center">
+          <div class="radial-progress text-green-400  scale-150" style="--value:95;" role="progressbar"><span
+              class="text-black font-bold">95%</span></div>
+          <h1 class="font-bold text-lg text-black  pt-7">Experienced Coach</h1>
+          <p class="font-bold text-sm text-secondary">Expert coach, 95% satisfaction.</p>
+        </div>
+        <!-- progress-3 -->
+        <div class="mt-14 lg:mt-0 space-y-1  items-center text-center">
+          <div class="radial-progress text-orange-400  scale-150" style="--value:90;" role="progressbar"><span
+              class="text-black font-bold">90%</span></div>
+          <h1 class="font-bold text-lg text-black pt-7">Senior Player</h1>
+          <p class="font-bold text-sm text-secondary">Seasoned player, 90% performance.</p>
+        </div>
+        <!-- progress-4 -->
+        <div class="mt-14 lg:mt-0 space-y-1  items-center text-center">
+          <div class="radial-progress text-blue-500  scale-150" style="--value:80;" role="progressbar"><span
+              class="text-black font-bold">80%</span></div>
+          <h1 class="font-bold text-lg text-black pt-7">Training Ground</h1>
+          <p class="font-bold text-sm text-secondary">Dynamic training hub, 80% satisfaction</p>
+        </div>
+      </div>
+    </section>
 
+    <!-- section Program -->
+    <section>
+      <div class="text-center mt-6 md:mt-16 space-y-1 md:space-y-3">
+        <h1 class="font-bold text-3xl text-black">Program Sections</h1>
+        <p class="font-bold text-sm text-secondary">Explore diverse program sections, offering tailored experiences, educational insights, and dynamic activities for personal and professional growth.</p>
+      </div>
+    </section>
   </main>
   <!-- footer -->
-  <footer>
+  <footer class="w-[90%] md:w-[80%] mx-auto">
 
   </footer>
 </body>
