@@ -46,34 +46,36 @@
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+            <div tabindex="0" role="button" class="btn btn-ghost  lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-auto w-7" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
             </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a class="text-primary">Home</a></li>
-              <li><a>About</a></li>
-              <li><a>Pages</a></li>
-              <li><a>Blog</a></li>
-              <li><a>Contact</a></li>
+              <li><a class="text-primary text-lg">Home</a></li>
+              <li><a class="text-lg">About</a></li>
+              <li><a class="text-lg">Pages</a></li>
+              <li><a class="text-lg">Blog</a></li>
+              <li><a class="text-lg">Contact</a></li>
             </ul>
           </div>
-          <a href="#"><h1 class="text-xl font-black">Hockey<span class="text-primary">’</span>s</h1></a>
+          <a href="#">
+            <h1 class="text-3xl font-black">Hockey<span class="text-primary">’</span>s</h1>
+          </a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a class="text-primary">Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Pages</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Contact</a></li>
+            <li><a class="text-primary text-xl">Home</a></li>
+            <li><a class="text-xl">About</a></li>
+            <li><a class="text-xl">Pages</a></li>
+            <li><a class="text-xl">Blog</a></li>
+            <li><a class="text-xl">Contact</a></li>
           </ul>
         </div>
         <div class="navbar-end">
           <i class="fa-solid fa-magnifying-glass mr-4 hidden md:block"></i>
-          <a class="btn bg-primary text-white text-[18px] px-6 ">Get Ticket</a>
+          <a class="btn bg-primary text-white text-xl px-6 ">Get Ticket</a>
         </div>
       </div>
     </nav>
@@ -83,8 +85,8 @@
     <div class="relative">
       <div class="carousel w-full ">
         <!-- image-1 -->
-        <div id="slide1" class="carousel-item relative w-full">
-          <img src="Images/1.png" class="w-[full]" />
+        <div id="slide1" class="carousel-item relative w-full ">
+          <img src="Images/1.png" class="w-[full] rounded-2xl" />
           <div class="absolute bottom-3 left-3  md:bottom-10 md:left-10 justify-between ">
             <a href="#slide3" class="btn btn-circle bg-black text-white  border-none mr-5">❮</a>
             <a href="#slide2" class="btn btn-circle bg-black text-white  border-none">❯</a>
@@ -92,7 +94,7 @@
         </div>
         <!-- image-2 -->
         <div id="slide2" class="carousel-item relative w-full">
-          <img src="Images/2.png" class="w-full" />
+          <img src="Images/2.png" class="w-full rounded-2xl" />
           <div class="absolute bottom-3 left-3 md:bottom-10 md:left-10  justify-between ">
             <a href="#slide1" class="btn btn-circle bg-black text-white  border-none mr-5">❮</a>
             <a href="#slide3" class="btn btn-circle bg-black text-white  border-none">❯</a>
@@ -100,7 +102,7 @@
         </div>
         <!-- image-3 -->
         <div id="slide3" class="carousel-item relative w-full">
-          <img src="Images/3.png" class="w-full" />
+          <img src="Images/3.png" class="w-full rounded-2xl" />
           <div class="absolute bottom-3 left-3 md:bottom-10 md:left-10  justify-between ">
             <a href="#slide2" class="btn btn-circle bg-black text-white  border-none mr-5">❮</a>
             <a href="#slide1" class="btn btn-circle bg-black text-white  border-none">❯</a>
@@ -109,10 +111,12 @@
       </div>
       <!-- box -->
       <div
-        class="bg-black space-y-1 static rounded-xl p-5 md:absolute md:w-[50%] md:bottom-5 md:right-5 md:space-y-1 lg:w-[47%] lg:bottom-14 lg:right-14 lg:space-y-3 xl:space-y-5 mt-4 md:mt-0">
-        <h1 class="text-white font-bold text-xl md:text-[15px] lg:text-xl xl:text-2xl">Meet all the heroes from the
+        class="bg-black space-y-1 static rounded-xl p-10 md:p-5 md:absolute md:w-[50%] md:bottom-5 md:right-5 md:space-y-1 lg:p-10 lg:w-[47%] lg:bottom-14 lg:right-14 lg:space-y-3 xl:p-14 xl:space-y-5 mt-4 md:mt-0">
+        <h1 class="text-white font-bold text-[19px] md:text-[15px] lg:text-[17px] xl:text-xl">Meet all the heroes from
+          the
           field</h1>
-        <p class="text-secondary text-xs md:text-[12px] lg:text-[15px] xl:text-[17px]">Connect with the field's hockey
+        <p style="line-height: 20px;" class=" text-secondary text-xs md:text-[12px] lg:text-[15px] xl:text-[14px] ">
+          Connect with the field's hockey
           legends in a dynamic and inspiring encounter, celebrating the prowess and passion of these heroes.</p>
       </div>
     </div>
@@ -123,8 +127,8 @@
     <section>
       <div class="text-center mt-6 md:mt-16 space-y-1 md:space-y-3">
         <hr class="pb-5 border-t-[2px] border-dashed border-gray-200">
-        <h1 class=" font-bold text-3xl text-black">Professional Hockeys Club</h1>
-        <p class="font-bold text-sm text-secondary">Premier league, elite athletes, and unforgettable moments – join the
+        <h1 class=" font-black text-3xl text-black">Professional Hockeys Club</h1>
+        <p class="font-bold text-lg text-secondary">Premier league, elite athletes, and unforgettable moments – join the
           exclusive world of our Professional Hockey Club for greatness. </p>
       </div>
 
@@ -134,30 +138,30 @@
         <!-- progress-1 -->
         <div class="space-y-1  items-center text-center">
           <div class="radial-progress text-primary scale-150" style="--value:87;" role="progressbar"><span
-              class="text-black font-bold">87%</span></div>
-          <h1 class="font-bold text-lg text-black pt-7">Prayer Facility</h1>
-          <p class="font-bold text-sm text-secondary">Spiritual serenity, 87% satisfaction.</p>
+              class="text-black font-black text-xl">87%</span></div>
+          <h1 class="font-bold text-xl text-black pt-7">Prayer Facility</h1>
+          <p class="font-bold text-lg text-secondary">Spiritual serenity, 87% satisfaction.</p>
         </div>
         <!-- progress-2 -->
         <div class="mt-14 md:mt-0 space-y-1  items-center text-center">
           <div class="radial-progress text-green-400  scale-150" style="--value:95;" role="progressbar"><span
-              class="text-black font-bold">95%</span></div>
-          <h1 class="font-bold text-lg text-black  pt-7">Experienced Coach</h1>
-          <p class="font-bold text-sm text-secondary">Expert coach, 95% satisfaction.</p>
+              class="text-black font-black text-xl">95%</span></div>
+          <h1 class="font-bold text-xl text-black  pt-7">Experienced Coach</h1>
+          <p class="font-bold text-lg text-secondary">Expert coach, 95% satisfaction.</p>
         </div>
         <!-- progress-3 -->
         <div class="mt-14 lg:mt-0 space-y-1  items-center text-center">
           <div class="radial-progress text-orange-400  scale-150" style="--value:90;" role="progressbar"><span
-              class="text-black font-bold">90%</span></div>
-          <h1 class="font-bold text-lg text-black pt-7">Senior Player</h1>
-          <p class="font-bold text-sm text-secondary">Seasoned player, 90% performance.</p>
+              class="text-black font-black text-xl">90%</span></div>
+          <h1 class="font-bold text-xl text-black pt-7">Senior Player</h1>
+          <p class="font-bold text-lg text-secondary">Seasoned player, 90% performance.</p>
         </div>
         <!-- progress-4 -->
         <div class="mt-14 lg:mt-0 space-y-1  items-center text-center">
           <div class="radial-progress text-blue-500  scale-150" style="--value:80;" role="progressbar"><span
-              class="text-black font-bold">80%</span></div>
-          <h1 class="font-bold text-lg text-black pt-7">Training Ground</h1>
-          <p class="font-bold text-sm text-secondary">Dynamic training hub, 80% satisfaction</p>
+              class="text-black font-black text-xl">80%</span></div>
+          <h1 class="font-bold text-xl text-black pt-7">Training Ground</h1>
+          <p class="font-bold text-lg text-secondary">Dynamic training hub, 80% satisfaction</p>
         </div>
       </div>
     </section>
@@ -166,31 +170,36 @@
     <section>
       <div class="text-center mt-6 md:mt-16 space-y-1 md:space-y-3">
         <hr class="pb-5 border-t-[2px] border-dashed border-gray-200">
-        <h1 class="font-bold text-3xl text-black">Program Sections</h1>
-        <p class="font-bold text-sm text-secondary">Explore diverse program sections, offering tailored experiences,
+        <h1 class="font-black text-3xl text-black">Program Sections</h1>
+        <p class="font-bold text-lg text-secondary">Explore diverse program sections, offering tailored experiences,
           educational insights, and dynamic activities for personal and professional growth.</p>
       </div>
       <hr class="mt-10 border-t-[2px] border-dashed border-gray-200">
       <!--card container  -->
       <div class="mt-10 grid gap-10 grid-cols-1 md:grid-cols-2">
+
         <div
-          class="bg-[url(Images/2.png)] bg-no-repeat bg-cover bg-center rounded-2xl  py-10 px-5 md:pt-24 md:pb-10 md:px-10 space-y-3">
-          <h1 class="text-2xl font-bold text-white">Junior Program</h1>
-          <p class="text-sm  text-white">Junior program: Nurturing young talents <br> through fun, educational
-            activities for a <br> brighter future in sports</p>
+          style="background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(Images/2.png); background-repeat: no-repeat; background-size: cover; background-position: center;"
+          class=" rounded-2xl  py-10 px-5 md:pt-24 md:pb-10 md:px-10 space-y-3">
+          <h1 class="text-3xl font-bold text-white">Junior Program</h1>
+          <p class="text-xl  text-white">Energizing junior program offering skill <br> development, mentorship, and
+            memorable <br> experiences for personal and athletic growth.</p>
           <button class="px-7 btn bg-[#FF4240] border-none text-white">Register Now!</button>
         </div>
+
         <div
-          class="bg-[url(Images/3.png)] bg-no-repeat bg-cover bg-center rounded-2xl  py-10 px-5 md:pt-24 md:pb-10 md:px-10 space-y-3">
-          <h1 class="text-2xl font-bold text-white">Teenager Program</h1>
-          <p class="text-sm  text-white">Energizing teenager program offering skill <br> development, mentorship, and
+          style="background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(Images/3.png); background-repeat: no-repeat; background-size: cover; background-position: center;"
+          class="rounded-2xl  py-10 px-5 md:pt-24 md:pb-10 md:px-10 space-y-3">
+          <h1 class="text-3xl font-bold text-white">Teenager Program</h1>
+          <p class="text-xl  text-white">Energizing teenager program offering skill <br> development, mentorship, and
             memorable <br> experiences for personal and athletic growth.</p>
           <button class="px-7 btn bg-[#FF4240] border-none text-white">Register Now!</button>
         </div>
         <div
-          class="bg-[url(Images/4.png)] bg-no-repeat bg-cover bg-center rounded-2xl  py-10 px-5 md:pt-24 md:pb-10 md:px-10 space-y-3 col-span-1 md:col-span-2">
-          <h1 class="text-2xl font-bold text-white">Professional Program</h1>
-          <p class="text-sm  text-white">Elite professional program, honing skills, <br> fostering excellence, and
+          style="background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(Images/4.png); background-repeat: no-repeat; background-size: cover; background-position: center;"
+          class="rounded-2xl  py-10 px-5 md:pt-24 md:pb-10 md:px-10 space-y-3 col-span-1 md:col-span-2">
+          <h1 class="text-3xl font-bold text-white">Professional Program</h1>
+          <p class="text-lg  text-white">Elite professional program, honing skills, <br> fostering excellence, and
             shaping <br> careers for unparalleled success in sports.</p>
           <button class="px-7 btn bg-[#FF4240] border-none text-white">Register Now!</button>
         </div>
@@ -201,140 +210,152 @@
     <section>
       <div class="text-center mt-6 md:mt-16 space-y-1 md:space-y-3">
         <hr class="pb-5 border-t-[2px] border-dashed border-gray-200">
-        <h1 class="font-bold text-3xl text-black">Our New Products</h1>
-        <p class="font-bold text-sm text-secondary">Discover innovation with our new products—crafted with quality,
+        <h1 class="font-black text-3xl text-black">Our New Products</h1>
+        <p class="font-bold text-lg text-secondary">Discover innovation with our new products—crafted with quality,
           style, and functionality to elevate your experience and exceed expectations.</p>
       </div>
       <hr class="mt-10 border-t-[2px] border-dashed border-gray-200">
       <!--products container -->
       <div class="mt-16 grid gap-16 grid-cols-1 md:grid-cols-2 items-center ">
         <!-- product-1 -->
-       <div class="flex justify-center">
-        <div class="grid lg:gap-5 grid-cols-1 lg:grid-cols-5 rounded-xl border  items-center  w-[500px] p-5">
-          <div class="col-span-2 mb-5 lg:mb-0">
-            <img class="block mx-auto w-full" src="Images/5.png" alt="">
+        <div class="flex justify-center">
+          <div class="grid lg:gap-5 grid-cols-1 lg:grid-cols-5 rounded-xl border  items-center  w-[500px] p-5">
+            <div class="col-span-2 mb-5 lg:mb-0">
+              <img class="block mx-auto w-full" src="Images/5.png" alt="">
+            </div>
+            <div class="col-span-3 space-y-2 ">
+              <div class="flex">
+                <h1><i class="fa-solid fa-star text-[#F99808]"></i> &nbsp; 5.0 &nbsp;&nbsp;&nbsp;&nbsp; <i
+                    class="fa-regular fa-eye"></i> 20</h1>
+                <span class="flex">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="w-4"
+                    src="Images/love-svgrepo-com.svg" alt="">&nbsp; 200</span>
+              </div>
+              <h1 class="font-bold text-lg">World Cup Flags Football</h1>
+              <p class="text-[#717174] text-sm">Show your team spirit with <br> World Cup Flags Football Jacket!</p>
+              <div class="block lg:hidden space-y-2">
+                <h1 class="font-bold text-xl text-red-500">Price - $22.00</h1>
+                <span class="text-[#717174] text-sm"> <i class="fa-solid fa-cart-shopping"></i> Delivery Free</span>
+              </div>
+              <h1 class="hidden lg:block font-bold text-[16px] text-red-500">Price- $22.0&nbsp;&nbsp; <span
+                  class="text-[#717174] text-sm"> <i class="fa-solid fa-cart-shopping"></i> Delivery Free</span></h1>
+            </div>
           </div>
-          <div class="col-span-3 space-y-2 ">
-            <div class="flex">
-              <h1><i class="fa-solid fa-star text-[#F99808]"></i> &nbsp; 5.0 &nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-regular fa-eye"></i> 20</h1>
-            <span class="flex">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="w-4" src="Images/love-svgrepo-com.svg" alt="">&nbsp; 200</span>
+        </div><!-- product-2 -->
+        <div class="flex justify-center">
+          <div class="grid lg:gap-5 grid-cols-1 lg:grid-cols-5 rounded-xl border  items-center  w-[500px] p-5">
+            <div class="col-span-2 mb-5 lg:mb-0">
+              <img class="block mx-auto w-full" src="Images/6.png" alt="">
             </div>
-            <h1 class="font-bold text-lg">World Cup Flags Football</h1>
-            <p class="text-[#717174] text-sm">Show your team spirit with <br> World Cup Flags Football Jacket!</p>
-            <div class="block lg:hidden space-y-2">
-              <h1 class="font-bold text-xl text-red-500">Price - $22.00</h1>
-              <span class="text-[#717174] text-sm"> <i class="fa-solid fa-cart-shopping"></i> Delivery  Free</span>
+            <div class="col-span-3 space-y-2 ">
+              <div class="flex">
+                <h1><i class="fa-solid fa-star text-[#F99808]"></i> &nbsp; 5.0 &nbsp;&nbsp;&nbsp;&nbsp; <i
+                    class="fa-regular fa-eye"></i> 20</h1>
+                <span class="flex">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="w-4"
+                    src="Images/love-svgrepo-com.svg" alt="">&nbsp; 200</span>
+              </div>
+              <h1 class="font-bold text-lg">World Cup Flags Football</h1>
+              <p class="text-[#717174] text-sm">Show your team spirit with <br> World Cup Flags Football-Ball!</p>
+              <div class="block lg:hidden space-y-2">
+                <h1 class="font-bold text-xl text-red-500">Price - $22.00</h1>
+                <span class="text-[#717174] text-sm"> <i class="fa-solid fa-cart-shopping"></i> Delivery Free</span>
+              </div>
+              <h1 class="hidden lg:block font-bold text-[16px] text-red-500">Price- $22.0&nbsp;&nbsp; <span
+                  class="text-[#717174] text-sm"> <i class="fa-solid fa-cart-shopping"></i> Delivery Free</span></h1>
             </div>
-            <h1 class="hidden lg:block font-bold text-[16px] text-red-500">Price- $22.0&nbsp;&nbsp; <span class="text-[#717174] text-sm"> <i
-              class="fa-solid fa-cart-shopping"></i> Delivery Free</span></h1>
+          </div>
+        </div><!-- product-3 -->
+        <div class="flex justify-center">
+          <div class="grid lg:gap-5 grid-cols-1 lg:grid-cols-5 rounded-xl border  items-center  w-[500px] p-5">
+            <div class="col-span-2 mb-5 lg:mb-0">
+              <img class="block mx-auto w-full" src="Images/7.png" alt="">
+            </div>
+            <div class="col-span-3 space-y-2 ">
+              <div class="flex">
+                <h1><i class="fa-solid fa-star text-[#F99808]"></i> &nbsp; 5.0 &nbsp;&nbsp;&nbsp;&nbsp; <i
+                    class="fa-regular fa-eye"></i> 20</h1>
+                <span class="flex">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="w-4"
+                    src="Images/love-svgrepo-com.svg" alt="">&nbsp; 200</span>
+              </div>
+              <h1 class="font-bold text-lg">World Cup Flags Football</h1>
+              <p class="text-[#717174] text-sm">Show your team spirit with <br> World Cup Flags Football Cap!</p>
+              <div class="block lg:hidden space-y-2">
+                <h1 class="font-bold text-xl text-red-500">Price - $22.00</h1>
+                <span class="text-[#717174] text-sm"> <i class="fa-solid fa-cart-shopping"></i> Delivery Free</span>
+              </div>
+              <h1 class="hidden lg:block font-bold text-[16px] text-red-500">Price- $22.0&nbsp;&nbsp; <span
+                  class="text-[#717174] text-sm"> <i class="fa-solid fa-cart-shopping"></i> Delivery Free</span></h1>
+            </div>
+          </div>
+        </div><!-- product-4 -->
+        <div class="flex justify-center">
+          <div class="grid lg:gap-5 grid-cols-1 lg:grid-cols-5 rounded-xl border  items-center  w-[500px] p-5">
+            <div class="col-span-2 mb-5 lg:mb-0">
+              <img class="block mx-auto w-full" src="Images/8.png" alt="">
+            </div>
+            <div class="col-span-3 space-y-2 ">
+              <div class="flex">
+                <h1><i class="fa-solid fa-star text-[#F99808]"></i> &nbsp; 5.0 &nbsp;&nbsp;&nbsp;&nbsp; <i
+                    class="fa-regular fa-eye"></i> 20</h1>
+                <span class="flex">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="w-4"
+                    src="Images/love-svgrepo-com.svg" alt="">&nbsp; 200</span>
+              </div>
+              <h1 class="font-bold text-lg">World Cup Flags Football</h1>
+              <p class="text-[#717174] text-sm">Show your team spirit with <br> World Cup Flags Football T-shirt!</p>
+              <div class="block lg:hidden space-y-2">
+                <h1 class="font-bold text-xl text-red-500">Price - $22.00</h1>
+                <span class="text-[#717174] text-sm"> <i class="fa-solid fa-cart-shopping"></i> Delivery Free</span>
+              </div>
+              <h1 class="hidden lg:block font-bold text-[16px] text-red-500">Price- $22.0&nbsp;&nbsp; <span
+                  class="text-[#717174] text-sm"> <i class="fa-solid fa-cart-shopping"></i> Delivery Free</span></h1>
+            </div>
+          </div>
+        </div><!-- product-5 -->
+        <div class="flex justify-center">
+          <div class="grid lg:gap-5 grid-cols-1 lg:grid-cols-5 rounded-xl border  items-center  w-[500px] p-5">
+            <div class="col-span-2 mb-5 lg:mb-0">
+              <img class="block mx-auto w-full" src="Images/9.png" alt="">
+            </div>
+            <div class="col-span-3 space-y-2 ">
+              <div class="flex">
+                <h1><i class="fa-solid fa-star text-[#F99808]"></i> &nbsp; 5.0 &nbsp;&nbsp;&nbsp;&nbsp; <i
+                    class="fa-regular fa-eye"></i> 20</h1>
+                <span class="flex">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="w-4"
+                    src="Images/love-svgrepo-com.svg" alt="">&nbsp; 200</span>
+              </div>
+              <h1 class="font-bold text-lg">World Cup Flags Football</h1>
+              <p class="text-[#717174] text-sm">Show your team spirit with <br> World Cup Flags Football Helmet!</p>
+              <div class="block lg:hidden space-y-2">
+                <h1 class="font-bold text-xl text-red-500">Price - $22.00</h1>
+                <span class="text-[#717174] text-sm"> <i class="fa-solid fa-cart-shopping"></i> Delivery Free</span>
+              </div>
+              <h1 class="hidden lg:block font-bold text-[16px] text-red-500">Price- $22.0&nbsp;&nbsp; <span
+                  class="text-[#717174] text-sm"> <i class="fa-solid fa-cart-shopping"></i> Delivery Free</span></h1>
+            </div>
+          </div>
+        </div><!-- product-6 -->
+        <div class="flex justify-center">
+          <div class="grid lg:gap-5 grid-cols-1 lg:grid-cols-5 rounded-xl border  items-center  w-[500px] p-5">
+            <div class="col-span-2 mb-5 lg:mb-0">
+              <img class="block mx-auto w-full" src="Images/10.png" alt="">
+            </div>
+            <div class="col-span-3 space-y-2 ">
+              <div class="flex">
+                <h1><i class="fa-solid fa-star text-[#F99808]"></i> &nbsp; 5.0 &nbsp;&nbsp;&nbsp;&nbsp; <i
+                    class="fa-regular fa-eye"></i> 20</h1>
+                <span class="flex">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="w-4"
+                    src="Images/love-svgrepo-com.svg" alt="">&nbsp; 200</span>
+              </div>
+              <h1 class="font-bold text-lg">World Cup Flags Football</h1>
+              <p class="text-[#717174] text-sm">Show your team spirit with <br> World Cup Flags Football-Ball!</p>
+              <div class="block lg:hidden space-y-2">
+                <h1 class="font-bold text-xl text-red-500">Price - $22.00</h1>
+                <span class="text-[#717174] text-sm"> <i class="fa-solid fa-cart-shopping"></i> Delivery Free</span>
+              </div>
+              <h1 class="hidden lg:block font-bold text-[16px] text-red-500">Price- $22.0&nbsp;&nbsp; <span
+                  class="text-[#717174] text-sm"> <i class="fa-solid fa-cart-shopping"></i> Delivery Free</span></h1>
+            </div>
           </div>
         </div>
-       </div><!-- product-2 -->
-       <div class="flex justify-center">
-        <div class="grid lg:gap-5 grid-cols-1 lg:grid-cols-5 rounded-xl border  items-center  w-[500px] p-5">
-          <div class="col-span-2 mb-5 lg:mb-0">
-            <img class="block mx-auto w-full" src="Images/6.png" alt="">
-          </div>
-          <div class="col-span-3 space-y-2 ">
-            <div class="flex">
-              <h1><i class="fa-solid fa-star text-[#F99808]"></i> &nbsp; 5.0 &nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-regular fa-eye"></i> 20</h1>
-            <span class="flex">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="w-4" src="Images/love-svgrepo-com.svg" alt="">&nbsp; 200</span>
-            </div>
-            <h1 class="font-bold text-lg">World Cup Flags Football</h1>
-            <p class="text-[#717174] text-sm">Show your team spirit with <br> World Cup Flags Football-Ball!</p>
-            <div class="block lg:hidden space-y-2">
-              <h1 class="font-bold text-xl text-red-500">Price - $22.00</h1>
-              <span class="text-[#717174] text-sm"> <i class="fa-solid fa-cart-shopping"></i> Delivery Free</span>
-            </div>
-            <h1 class="hidden lg:block font-bold text-[16px] text-red-500">Price- $22.0&nbsp;&nbsp; <span class="text-[#717174] text-sm"> <i
-              class="fa-solid fa-cart-shopping"></i> Delivery Free</span></h1>
-          </div>
-        </div>
-       </div><!-- product-3 -->
-       <div class="flex justify-center">
-        <div class="grid lg:gap-5 grid-cols-1 lg:grid-cols-5 rounded-xl border  items-center  w-[500px] p-5">
-          <div class="col-span-2 mb-5 lg:mb-0">
-            <img class="block mx-auto w-full" src="Images/7.png" alt="">
-          </div>
-          <div class="col-span-3 space-y-2 ">
-            <div class="flex">
-              <h1><i class="fa-solid fa-star text-[#F99808]"></i> &nbsp; 5.0 &nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-regular fa-eye"></i> 20</h1>
-            <span class="flex">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="w-4" src="Images/love-svgrepo-com.svg" alt="">&nbsp; 200</span>
-            </div>
-            <h1 class="font-bold text-lg">World Cup Flags Football</h1>
-            <p class="text-[#717174] text-sm">Show your team spirit with <br> World Cup Flags Football Cap!</p>
-            <div class="block lg:hidden space-y-2">
-              <h1 class="font-bold text-xl text-red-500">Price - $22.00</h1>
-              <span class="text-[#717174] text-sm"> <i class="fa-solid fa-cart-shopping"></i> Delivery  Free</span>
-            </div>
-            <h1 class="hidden lg:block font-bold text-[16px] text-red-500">Price- $22.0&nbsp;&nbsp; <span class="text-[#717174] text-sm"> <i
-              class="fa-solid fa-cart-shopping"></i> Delivery Free</span></h1>
-          </div>
-        </div>
-       </div><!-- product-4 -->
-       <div class="flex justify-center">
-        <div class="grid lg:gap-5 grid-cols-1 lg:grid-cols-5 rounded-xl border  items-center  w-[500px] p-5">
-          <div class="col-span-2 mb-5 lg:mb-0">
-            <img class="block mx-auto w-full" src="Images/8.png" alt="">
-          </div>
-          <div class="col-span-3 space-y-2 ">
-            <div class="flex">
-              <h1><i class="fa-solid fa-star text-[#F99808]"></i> &nbsp; 5.0 &nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-regular fa-eye"></i> 20</h1>
-            <span class="flex">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="w-4" src="Images/love-svgrepo-com.svg" alt="">&nbsp; 200</span>
-            </div>
-            <h1 class="font-bold text-lg">World Cup Flags Football</h1>
-            <p class="text-[#717174] text-sm">Show your team spirit with <br> World Cup Flags Football T-shirt!</p>
-            <div class="block lg:hidden space-y-2">
-              <h1 class="font-bold text-xl text-red-500">Price - $22.00</h1>
-              <span class="text-[#717174] text-sm"> <i class="fa-solid fa-cart-shopping"></i> Delivery  Free</span>
-            </div>
-            <h1 class="hidden lg:block font-bold text-[16px] text-red-500">Price- $22.0&nbsp;&nbsp; <span class="text-[#717174] text-sm"> <i
-              class="fa-solid fa-cart-shopping"></i> Delivery Free</span></h1>
-          </div>
-        </div>
-       </div><!-- product-5 -->
-       <div class="flex justify-center">
-        <div class="grid lg:gap-5 grid-cols-1 lg:grid-cols-5 rounded-xl border  items-center  w-[500px] p-5">
-          <div class="col-span-2 mb-5 lg:mb-0">
-            <img class="block mx-auto w-full" src="Images/9.png" alt="">
-          </div>
-          <div class="col-span-3 space-y-2 ">
-            <div class="flex">
-              <h1><i class="fa-solid fa-star text-[#F99808]"></i> &nbsp; 5.0 &nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-regular fa-eye"></i> 20</h1>
-            <span class="flex">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="w-4" src="Images/love-svgrepo-com.svg" alt="">&nbsp; 200</span>
-            </div>
-            <h1 class="font-bold text-lg">World Cup Flags Football</h1>
-            <p class="text-[#717174] text-sm">Show your team spirit with <br> World Cup Flags Football Helmet!</p>
-            <div class="block lg:hidden space-y-2">
-              <h1 class="font-bold text-xl text-red-500">Price - $22.00</h1>
-              <span class="text-[#717174] text-sm"> <i class="fa-solid fa-cart-shopping"></i> Delivery  Free</span>
-            </div>
-            <h1 class="hidden lg:block font-bold text-[16px] text-red-500">Price- $22.0&nbsp;&nbsp; <span class="text-[#717174] text-sm"> <i
-              class="fa-solid fa-cart-shopping"></i> Delivery Free</span></h1>
-          </div>
-        </div>
-       </div><!-- product-6 -->
-       <div class="flex justify-center">
-        <div class="grid lg:gap-5 grid-cols-1 lg:grid-cols-5 rounded-xl border  items-center  w-[500px] p-5">
-          <div class="col-span-2 mb-5 lg:mb-0">
-            <img class="block mx-auto w-full" src="Images/10.png" alt="">
-          </div>
-          <div class="col-span-3 space-y-2 ">
-            <div class="flex">
-              <h1><i class="fa-solid fa-star text-[#F99808]"></i> &nbsp; 5.0 &nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-regular fa-eye"></i> 20</h1>
-            <span class="flex">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="w-4" src="Images/love-svgrepo-com.svg" alt="">&nbsp; 200</span>
-            </div>
-            <h1 class="font-bold text-lg">World Cup Flags Football</h1>
-            <p class="text-[#717174] text-sm">Show your team spirit with <br> World Cup Flags Football-Ball!</p>
-            <div class="block lg:hidden space-y-2">
-              <h1 class="font-bold text-xl text-red-500">Price - $22.00</h1>
-              <span class="text-[#717174] text-sm"> <i class="fa-solid fa-cart-shopping"></i> Delivery  Free</span>
-            </div>
-            <h1 class="hidden lg:block font-bold text-[16px] text-red-500">Price- $22.0&nbsp;&nbsp; <span class="text-[#717174] text-sm"> <i
-              class="fa-solid fa-cart-shopping"></i> Delivery Free</span></h1>
-          </div>
-        </div>
-       </div>
       </div>
     </section>
 
@@ -342,8 +363,8 @@
     <section>
       <div class="text-center mt-6 md:mt-16 space-y-1 md:space-y-3">
         <hr class="pb-5 border-t-[2px] border-dashed border-gray-200">
-        <h1 class="font-bold text-3xl text-black">Clients Question</h1>
-        <p class="font-bold text-sm text-secondary">Client questions addressed promptly, ensuring satisfaction through
+        <h1 class="font-black text-3xl text-black">Clients Question</h1>
+        <p class="font-bold text-lg text-secondary">Client questions addressed promptly, ensuring satisfaction through
           clear communication, comprehensive solutions, and personalized support for optimal experiences.</p>
       </div>
       <hr class="mt-10 border-t-[2px] border-dashed border-gray-200">
@@ -353,58 +374,63 @@
           <img class="block mx-auto" src="Images/11.png" alt="">
         </div>
         <div class="flex-1 space-y-4">
-          <div class="collapse collapse-plus bg-base-200">
+          <div class="collapse collapse-plus ">
             <input type="radio" name="my-accordion-3" checked="checked" />
-            <div class="collapse-title text-xl font-medium">
+            <div class="collapse-title text-2xl font-black">
               Our Equipment
             </div>
             <div class="collapse-content">
-              <p>Durable, reliable equipment for optimal performance and athletic excellence.</p>
+              <p class="text-xl">Durable, reliable equipment for optimal performance and athletic excellence.</p>
             </div>
           </div>
-          <div class="collapse collapse-plus bg-base-200">
+          <hr class="bg-gray-300 w-[95%] mx-auto block">
+          <div class="collapse collapse-plus ">
             <input type="radio" name="my-accordion-3" />
-            <div class="collapse-title text-xl font-medium">
+            <div class="collapse-title text-2xl font-black">
               Hockey Training
             </div>
             <div class="collapse-content">
-              <p>Enroll to join</p>
+              <p class="text-xl">Enroll to join</p>
             </div>
           </div>
-          <div class="collapse collapse-plus bg-base-200">
+          <hr class="bg-gray-300 w-[95%] mx-auto block">
+          <div class="collapse collapse-plus ">
             <input type="radio" name="my-accordion-3" />
-            <div class="collapse-title text-xl font-medium">
+            <div class="collapse-title  text-2xl font-black">
               Private Lessons
             </div>
             <div class="collapse-content">
-              <p>Already have</p>
+              <p class="text-xl">Already have</p>
             </div>
           </div>
-          <div class="collapse collapse-plus bg-base-200">
+          <hr class="bg-gray-300 w-[95%] mx-auto block">
+          <div class="collapse collapse-plus ">
             <input type="radio" name="my-accordion-3" />
-            <div class="collapse-title text-xl font-medium">
+            <div class="collapse-title  text-2xl font-black">
               Ski Touring
             </div>
             <div class="collapse-content">
-              <p>available</p>
+              <p class="text-xl">available</p>
             </div>
           </div>
-          <div class="collapse collapse-plus bg-base-200">
+          <hr class="bg-gray-300 w-[95%] mx-auto block">
+          <div class="collapse collapse-plus ">
             <input type="radio" name="my-accordion-3" />
-            <div class="collapse-title text-xl font-medium">
+            <div class="collapse-title  text-2xl font-black">
               Booking
             </div>
             <div class="collapse-content">
-              <p>Going on</p>
+              <p class="text-xl">Going on</p>
             </div>
           </div>
-          <div class="collapse collapse-plus bg-base-200">
+          <hr class="bg-gray-300 w-[95%] mx-auto block">
+          <div class="collapse collapse-plus ">
             <input type="radio" name="my-accordion-3" />
-            <div class="collapse-title text-xl font-medium">
+            <div class="collapse-title  text-2xl font-black">
               Pricing
             </div>
             <div class="collapse-content">
-              <p>250$</p>
+              <p class="text-xl">250$</p>
             </div>
           </div>
         </div>
@@ -415,8 +441,8 @@
     <section>
       <div class="text-center mt-6 md:mt-16 space-y-1 md:space-y-3">
         <hr class="pb-5 border-t-[2px] border-dashed border-gray-200">
-        <h1 class="font-bold text-3xl text-black">Get In Touch</h1>
-        <p class="font-bold text-sm text-secondary">Contact us for seamless assistance, swift responses, and
+        <h1 class="font-black text-3xl text-black">Get In Touch</h1>
+        <p class="font-bold text-lg text-secondary">Contact us for seamless assistance, swift responses, and
           personalized support. Your inquiries matter; we're here to help anytime.</p>
       </div>
       <hr class="mt-10 border-t-[2px] border-dashed border-gray-200">
@@ -431,7 +457,7 @@
           <div class="bg-[#FFFCEF] my-7 space-y-2 p-8 rounded-xl">
             <img src="Images/Group 1171275318.png" alt="">
             <p class="text-sm text-gray-400">Email:</p>
-            <p class="font-bold">Email : 
+            <p class="font-bold">Email :
               hockeys@support.com</p>
           </div>
           <div class="bg-[#EFF5FE] space-y-2 p-8 rounded-xl">
@@ -443,60 +469,63 @@
         <!-- inputs -->
         <div class="flex-1">
 
-        <div class=" grid gap-7 md:gap-14 grid-cols-1  md:grid-cols-2 items-center justify-center">
-         <div>
-          <div class="space-y-3">
-            <h1 class="text-lg font-bold ">Your Name</h1>
-            <input class="bg-[#F8F8F8]  w-[100%]  py-3 px-5 rounded-xl" type="text" placeholder="Enter your full name">
-          </div>
-          <div class="mt-7 space-y-3">
-            <h1 class="text-lg font-bold ">Your Subject</h1>
-            <input class="bg-[#F8F8F8]  w-[100%] py-3 px-5 rounded-xl" type="text" placeholder="Enter your subject">
-          </div>
-         </div>
-          <div>
-            <div class="space-y-3">
-              <h1 class="text-lg font-bold ">Your Email</h1>
-              <input class="bg-[#F8F8F8] w-[100%]  py-3 px-5 rounded-xl" type="text" placeholder="Enter your email">
+          <div class=" grid gap-7 md:gap-14 grid-cols-1  md:grid-cols-2 items-center justify-center">
+            <div>
+              <div class="space-y-3">
+                <h1 class="text-lg font-bold ">Your Name</h1>
+                <input class="bg-[#F8F8F8]  w-[100%]  py-3 px-5 rounded-xl" type="text"
+                  placeholder="Enter your full name">
+              </div>
+              <div class="mt-7 space-y-3">
+                <h1 class="text-lg font-bold ">Your Subject</h1>
+                <input class="bg-[#F8F8F8]  w-[100%] py-3 px-5 rounded-xl" type="text" placeholder="Enter your subject">
+              </div>
             </div>
-            <div class="mt-7 space-y-3">
-              <h1 class="text-lg font-bold ">Phone Number</h1>
-              <input class="bg-[#F8F8F8] w-[100%]  py-3 px-5 rounded-xl" type="text" placeholder="Enter phone number ">
+            <div>
+              <div class="space-y-3">
+                <h1 class="text-lg font-bold ">Your Email</h1>
+                <input class="bg-[#F8F8F8] w-[100%]  py-3 px-5 rounded-xl" type="text" placeholder="Enter your email">
+              </div>
+              <div class="mt-7 space-y-3">
+                <h1 class="text-lg font-bold ">Phone Number</h1>
+                <input class="bg-[#F8F8F8] w-[100%]  py-3 px-5 rounded-xl" type="text"
+                  placeholder="Enter phone number ">
+              </div>
             </div>
-          </div>
           </div>
 
-            <div class="mt-7 space-y-3 col-span-2">
-              <h1 class="text-lg font-bold ">Message</h1>
-              <input class="bg-[#F8F8F8] w-[100%] pb-[250px]  pt-3 px-5 rounded-xl" type="text" placeholder="Enter your message">
-              <button class="btn bg-[#FF4240] w-[100%] text-white">Send Message</button>
-            </div>
+          <div class="mt-7 space-y-3 col-span-2">
+            <h1 class="text-lg font-bold ">Message</h1>
+            <input class="bg-[#F8F8F8] w-[100%] pb-[250px]  pt-3 px-5 rounded-xl" type="text"
+              placeholder="Enter your message">
+            <button class="btn bg-[#FF4240] pt-2 pb-10 rounded-2xl text-2xl w-[100%] text-white">Send Message</button>
+          </div>
         </div>
       </div>
       <!-- social icons -->
-      <div class="bg-[#F8F8F8] text-center space-y-2 mt-10 p-5">
-        <h1 class="text-2xl font-bold ">Social Media</h1>
-        <i class="fa-brands fa-twitter mx-2"></i>
-        <i class="fa-brands fa-facebook-f mx-2"></i>
-        <i class="fa-brands fa-instagram mx-2"></i>
-        <i class="fa-brands fa-github mx-2"></i>
+      <div class="bg-[#F8F8F8] text-center space-y-2 mt-10 p-10">
+        <h1 class="text-3xl font-black mb-5 ">Social Media</h1>
+        <i class="fa-brands fa-twitter text-3xl m-5"></i>
+        <i class="fa-brands fa-facebook-f text-3xl m-5"></i>
+        <i class="fa-brands fa-instagram text-3xl m-5"></i>
+        <i class="fa-brands fa-github text-3xl m-5"></i>
       </div>
     </section>
 
   </main>
   <!-- footer -->
-  <footer class="mt-20 p-10 bg-base-300 text-secondary bg-black">
+  <footer class="mt-16 p-10 bg-base-300 text-secondary bg-black">
     <!-- footer container -->
     <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10">
       <div class="space-y-2 text-center md:text-start">
-        <header class="pb-2 text-2xl uppercase font-bold text-white">Get In Touch</header>
-        <p class="text-sm">Contact us easily for prompt assistance and friendly support.</p>
+        <header class="pb-2 text-3xl capitalize   font-bold text-white">Get In Touch</header>
+        <p class="text-xl">Contact us easily for prompt assistance and friendly support.</p>
         <h1><i class="fa-solid fa-envelope text-red-500"></i> &nbsp; hockeys@support.com</h1>
         <h1><i class="fa-solid fa-phone text-red-500"></i> &nbsp; +62 123-321-543</h1>
       </div>
       <div class=" col-span-2 flex justify-around">
         <div class="space-y-1  text-center md:text-start">
-          <header class="pb-2 uppercase font-bold text-white">Company</header>
+          <header class="pb-2 capitalize text-2xl  font-bold text-white">Company</header>
           <a class="link link-hover block">About us</a>
           <a class="link link-hover block">Leadership</a>
           <a class="link link-hover block">Careers</a>
@@ -504,7 +533,7 @@
           <a class="link link-hover block">Legal Notice</a>
         </div>
         <div class="space-y-1  text-center md:text-start">
-          <header class="pb-2 uppercase font-bold text-white">Support</header>
+          <header class="pb-2 capitalize text-2xl  font-bold text-white">Support</header>
           <a class="link link-hover block">Help Center</a>
           <a class="link link-hover block">FAQ</a>
           <a class="link link-hover block">Ticket Support</a>
@@ -512,7 +541,7 @@
         </div>
       </div>
       <div class="space-y-1  text-center md:text-start">
-        <header class="pb-2 uppercase font-bold text-white">Services</header>
+        <header class="pb-2 capitalize text-2xl font-bold text-white">Services</header>
         <a class="link link-hover block">Academy</a>
         <a class="link link-hover block">Group Lesson</a>
         <a class="link link-hover block">Private Lesson</a>
